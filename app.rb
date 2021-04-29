@@ -1,5 +1,8 @@
 require 'bundler'
 Bundler.require
+require 'colorize'
+require 'colorized_string'
+require 'paint'
 
 $:.unshift File.expand_path("./../lib/app", __FILE__)
 $:.unshift File.expand_path("./../lib/views", __FILE__)
@@ -9,7 +12,7 @@ require_relative 'lib/app/player'
 require_relative 'lib/app/board'
 require_relative 'lib/app/board_case'
 # Les classes dans lib/views
-require_relative 'lib/app/show'
+require_relative 'lib/views/show'
 
 
 # --------------------------------------------------------------------------------------
